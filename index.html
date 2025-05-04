@@ -57,7 +57,7 @@
 				}
 			}
 
-			.description, .contact {
+			.description, .contact, .products {
 				font-size: 12px;
 				font-family: helvetica, arial, sans-serif;
 				color: #777;
@@ -66,7 +66,7 @@
 			}
 
 			@media (prefers-color-scheme: dark) {
-				.description, .contact {
+				.description, .contact, .products {
 					color: rgba(255,255,255,0.45);
 				}
 			}
@@ -79,20 +79,24 @@
 				margin-top: 4px;
 			}
 
-			.contact a {
+			.contact a, .products a {
 				color: #06f;
 				text-decoration: none;
 			}
 
-			.contact a:hover {
+			.contact a:hover, .products a:hover {
 				color: #1235b1;
 				text-decoration: underline;
 			}
 
 			@media (prefers-color-scheme: dark) {
-				.contact a:hover {
+				.contact a:hover, .products a:hover {
 					color: #257cff;
 				}
+			}
+
+			.products {
+				margin-top: 30px;
 			}
 		</style>
 	</head>
@@ -105,8 +109,10 @@
 
 			<p class="description">Digital product &amp; consultancy company based&nbsp;in&nbsp;Norway</p>
 			<p class="contact">Contact <a href="mailto:thomas@nattskiftet.no">thomas@nattskiftet.no</a></p>
-		</div>
 
-		<script>window.symmetricsId="QvMOQrjFnopbDAQClE3fvbhqAsTOVU5rN5BltlwdkhSw",function(i,c,d){i[c]=i[c]||function(){i[c][d]=i[c][d]||[],i[c][d].push(arguments)}}(window,"symmetrics","queue");</script><script async src="https://smtrx.xyz/signal/v1.min.js"></script>
+			<p class="products">
+				<strong>Products:</strong> <a href="https://tacotranslate.com">TacoTranslate</a> // <a href="https://podbooster.io">PodBooster</a> // <a href="https://freezetale.com">Freezetale</a>
+			</p>
+		</div>
 	</body>
 </html>
